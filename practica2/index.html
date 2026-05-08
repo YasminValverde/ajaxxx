@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pràctica 2</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="estils.css" rel="stylesheet" type="text/css">
+        <script src="codi.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <h1>AJAX: Pràctica2</h1>
+            <h3>Voti aquesta imatge</h3>
+
+            <img src="imatge.jpg" alt="Geometria generativa">
+
+            <label for="nom">Nom:</label>
+            <input type="text" id="nom" name="nom">
+
+            <label for="voto">Vot:</label>
+            <select id="voto" name="puntuacio">
+                <option value="0" selected>Seleccioni una opció</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select>
+
+            <input type="button" id="boto1" value="Votar">
+
+            <div id="resultat"></div>
+        </div>
+    </body>
+</html>
+
