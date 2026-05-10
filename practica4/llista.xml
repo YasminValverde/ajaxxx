@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Obres_literaries>
+    <Llibre>
+        <Autor>Juan Rulfo</Autor>
+        <Titol>Pedro Páramo</Titol>
+    </Llibre>
+    <Llibre>
+        <Autor>Juan Rulfo</Autor>
+        <Titol>El Llano en Llamas</Titol>
+    </Llibre>
+    <Llibre>
+        <Autor>Pablo Neruda</Autor>
+        <Titol>Veinte poemas de amor y una canción desesperada</Titol>
+    </Llibre>
+    <Llibre>
+        <Autor>Miguel de Cervantes Saavedra</Autor>
+        <Titol>Don Quijote de la Mancha</Titol>
+    </Llibre>
+    <Llibre>
+        <Autor>Jorge Luis Borges</Autor>
+        <Titol>Ficciones</Titol>
+    </Llibre>
+</Obres_literaries>

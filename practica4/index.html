@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pràctica 4</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="StyleSheet" href="estils.css" type="text/css">
+        <script>
+        window.onload = function () {
+            document.getElementById("boto1").addEventListener("click", function () {
+                var peticio = new XMLHttpRequest();
+                peticio.open("GET", "llista.xml", true);
+                peticio.onreadystatechange = function () {
+                    if (peticio.readyState === 4 && peticio.status === 200) {
+                        var documentXML = peticio.responseXML;
+                        var llibres = documentXML.getElementsByTagName("Llibre");
+                        var res = "";
+                        for (var i = 0; i < llibres.length; i++) {
+                            var autor = llibres[i].getElementsByTagName("Autor")[0].textContent;
+                            var titol = llibres[i].getElementsByTagName("Titol")[0].textContent;
+                            res += "<p>Autor: " + autor + ", Títol: " + titol + "</p>";
+                        }
+                        document.getElementById("resultado").innerHTML = res;
+                    }
+                };
+                peticio.send();
+            });
+        };
+        </script>
+    </head>
+    <body>
+        <h1>AJAX: Pràctica 4</h1>
+        <button class="button" id="boto1">Mostrar Obres Literàries</button>
+        <div id="resultado"></div>
+    </body>
+</html>
