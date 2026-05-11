@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pràctica 7 – Operacions Matemàtiques</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="estils.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="codi.js" defer></script>
+    </head>
+    <body>
+        <h1>Operacions matemàtiques</h1>
+
+        <div class="box">
+            <form action="pagina1" method="post" id="formulari1">
+                <h3>Quadrat</h3>
+                <label for="numero1">
+                    Informi un número:
+                    <input type="text" name="numero1" id="numero1">
+                </label>
+                <input type="submit" value="Calcula el quadrat" id="submit1">
+            </form>
+            <div id="resultat1"></div>
+
+            <form action="pagina1.php" method="post" id="formulari2">
+                <h3>Arrel quadrada</h3>
+                <label for="numero2">
+                    Informi un número:
+                    <input type="text" name="numero2" id="numero2">
+                </label>
+                <input type="submit" value="Calcula l'arrel quadrada" id="submit2">
+            </form>
+            <div id="resultat2"></div>
+        </div>
+    </body>
+</html>
