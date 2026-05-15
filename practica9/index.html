@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="UTF-8">
+        <title>Enquesta amb AJAX</title>
+        <link rel="stylesheet" href="estils.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="Chart.js"></script>
+        <script src="codi.js" defer></script>
+    </head>
+    <body>
+        <h1>Implementació d'una enquesta utilitzant AJAX</h1>
+
+        <div class="main">
+            <form action="pagina1.php" method="get" id="formulari">
+                <h2>Quin llenguatge utilitza per a l'implementació de pàgines dinàmiques?</h2>
+                <div id="enquesta">
+                    <label><input type="radio" id="radio1" name="radio" value="1">PHP</label>
+                    <label><input type="radio" id="radio2" name="radio" value="2">ASP</label>
+                    <label><input type="radio" id="radio3" name="radio" value="3">JSP</label>
+                    <input type="submit" value="Enviar" id="enviar">
+                </div>
+            </form>
+        </div>
+
+        <div id="resultat" class="box"></div>
+    </body>
+</html>
